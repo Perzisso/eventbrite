@@ -4,7 +4,6 @@ User.destroy_all
 Event.destroy_all
 Attendance.destroy_all
 
-mails = 
 
 5.times do
     user = User.create!(
@@ -17,7 +16,7 @@ mails =
 end
 
 puts "***** 5 users has been created *****"
-=begin
+
 10.times do
     event = Event.create!(
         start_date: Faker::Date.between(from: Date.today, to: '2023-12-31'),
@@ -30,16 +29,16 @@ puts "***** 5 users has been created *****"
     )
 end
 
-puts "****** events has been created *****"
+puts "****** 10 events has been created *****"
 
-50.times do
+20.times do
     attendance = Attendance.create!(
         user_id: rand(1..5),
         event_id: rand(1..10)
     )
 end
 
-puts "***** attendances has been created *****"
+puts "***** 20 attendances has been created *****"
     
-=end
+
 
