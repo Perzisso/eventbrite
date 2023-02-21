@@ -16,7 +16,7 @@ mails =
     )
 end
 
-puts "user ok"
+puts "***** 5 users has been created *****"
 =begin
 10.times do
     event = Event.create!(
@@ -30,7 +30,7 @@ puts "user ok"
     )
 end
 
-puts "event ok"
+puts "****** events has been created *****"
 
 50.times do
     attendance = Attendance.create!(
@@ -39,7 +39,7 @@ puts "event ok"
     )
 end
 
-puts "attendance ok"
+puts "***** attendances has been created *****"
     
 =end
 
