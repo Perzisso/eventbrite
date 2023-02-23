@@ -83,6 +83,8 @@ GEM
       xpath (~> 3.2)
     concurrent-ruby (1.2.0)
     crass (1.0.6)
+    cssbundling-rails (1.1.2)
+      railties (>= 6.0.0)
     date (3.3.3)
     debug (1.7.1)
       irb (>= 1.5.0)
@@ -107,6 +109,8 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jsbundling-rails (1.1.1)
+      railties (>= 6.0.0)
     launchy (2.5.2)
       addressable (~> 2.8)
     letter_opener (1.8.1)
@@ -222,11 +226,13 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
+  cssbundling-rails (~> 1.1)
   debug
   dotenv-rails (~> 2.8)
   faker (~> 3.1)
   importmap-rails
   jbuilder
+  jsbundling-rails (~> 1.1)
   letter_opener
   pg (~> 1.1)
   puma (~> 5.0)
